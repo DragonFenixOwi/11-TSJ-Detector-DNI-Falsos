@@ -1,0 +1,146 @@
+body
+{
+    /* Color de todo body que no golpea la vista   */
+        background-color: #e9e9e9;       
+    /* 
+        - Disponemos a body y header a que sean flexbox y por ende RESPONSIVE 
+        - Tambien se habilita a que el padre de ordenes al hijo directo.
+    */
+        
+    
+}
+header
+    {
+    /* 
+        - Disponemos a body y header a que sean flexbox y por ende RESPONSIVE 
+        - Tambien se habilita a que el padre de ordenes al hijo directo.
+    */
+        display:flex; 
+    
+    /*Movimiento Horizontal - Responsive*/
+        justify-content : center;
+    
+    /*Movimiento vertical - Responsive*/
+        align-items: center;
+    
+    /* Tamaño de la letra  */
+        font-size: 28px;
+        font-family: serif;
+    }
+
+
+
+section
+    {
+            display:flex;
+        /*Centrado en horizontal*/
+            justify-content: center;
+        
+        /*Centrado en vertical*/
+            align-items: center;
+        /*El padre ordena sus hijos(geo y titulo) que el tamaño de la letra sea :*/
+            font-size: 28px;
+            font-family: serif;
+            color: #01698e;
+        
+        
+    }
+
+
+/*Logo de Grupo Especial de Operaciones*/
+.geo
+    {
+        /*Tamaño definido en Adobe*/
+        width: 190px;
+        height: 180px;
+    }
+
+
+
+
+
+nav
+{
+    display:flex; 
+    /* Separación entre "inicio" y "baleares*/
+    padding: 20px;
+    /* Color dentro del nav - Sin "background", es para la letra*/
+    color: red;
+    
+    
+}   
+
+/* Etiqueta que indica lista */
+nav ul   
+    {
+        /*Quiero controlar a los hijos "lista" <li>*/
+        display:flex;
+        padding-left: 300px;  /*Posicionamiento mas a la izquierda*/
+        
+        /*justify-content:space-between;*/            /*  */
+    }
+
+
+
+
+
+/*Padre article*/
+article
+    {
+        display:flex;
+        justify-content: center;            /*Centrado en horizontal*/
+        align-items: center;                /*Centrado en vertical*/
+        font-size: 20px;                    /*El padre ordena sus hijos(geo y titulo) que el tamaño de la letra sea :*/
+        font-weight: bold;                 /* Negrita la letra*/
+        font-family: serif;
+        color: #01698e;
+        
+    }
+
+
+/* Titulo principal */
+.Contenedor_Formulario
+    {
+        display:flex;
+        justify-content: space-around;  /*Separación con un paddinge entre elementos en todo el contenedor*/
+        align-items: center;
+        flex-direction: column;         /*cambiamos el "main axis" o eje de la estructura  de flexbox, de row a column */
+        border-radius: 75px;           /*Radio de los vertices*/
+        width: 550px;                  /*Tamaño del cuadrado - Tamaño del contenedor*/
+        height: 500px;                 /*Tamaño del cuadrado - Tamaño del contenedor*/
+        background: transparent linear-gradient(0deg, #afafb1 0%, rgb(187, 187, 187) 100%) 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+
+
+#boton_entrar
+    {
+        width: 120px;                                    /*Tamaño del cuadrado - Tamaño del contenedor - ancho*/
+        border-radius: 20px;                           /*Radio de los vertices del boton*/
+        background-color: rgba(36, 29, 29, 0.349);   /*color de la caja*/
+        color: #01698e;                              /*color de la letra de la  caja*/
+        border:0;
+        text-transform: uppercase;
+    }
+
+
+
+#recordar_datos 
+    {
+        color: #01698e;
+    }
+
+#cambiar_datos 
+    {
+        color: #01698e;
+    }
+
+#boton_clave
+    {
+        width: 120px;                                   /*Tamaño del cuadrado - Tamaño del contenedor - ancho*/
+        border-radius: 20px;                            /*Radio de los vertices del boton*/
+        background-color: rgba(36, 29, 29, 0.349);    /*color de la caja*/
+        color: #01698e;                               /*color de la letra de la  caja*/
+        border:0;
+        text-transform: uppercase;
+    }
